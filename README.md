@@ -17,9 +17,17 @@ Python implementation of Image Captioning using BLIP model from Hugging Face's T
 
 BLIP effectively utilizes the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones
 It is built with Gradio for user interface and provides super fast performance by utilizing Nvidia CUDA
-- [Click here to download Pre-Trained Model](https://huggingface.co/Salesforce/blip-image-captioning-large)
+- [Click here to download Pre-Trained Model]()
 
 Enter directory of where the model and processor is present in the code and run the python file
 local host link will be in console which gives a website with simple interface to use the program.  
 
 Packages required : `Gradio` `transformers` `pillow` 
+
+# Face Detection AI
+This task implements a Gradio interface for both image and video inference using a pre-trained YOLO model (YOLOv8) for face detection, allowing users to upload images or videos and adjust the confidence threshold for detection. It classifies the detected face as Male or Female with great accuracy, the training data has been aquired from Roboflow and Fine-tuned on Google Colab with Tesla T4 GPU.
+- [Roboflow](https://huggingface.co/Salesforce/blip-image-captioning-large)
+
+The model and dataset's has been included in the repository along with training notebook and WebUI inference making it easier to access for everyone to use. 
+
+Packages required : `Gradio` `pillow` `ultralytics`
